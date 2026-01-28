@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Background Colors */
+    --color-background: #FFFFFF; /* white */
+    --color-foreground: #2C3E50; /* dark-charcoal */
+    --color-surface: #F8F9FA; /* gray-50 */
+    
+    /* Card Colors */
+    --color-card: #FFFFFF; /* white */
+    --color-card-foreground: #2C3E50; /* dark-charcoal */
+    
+    /* Popover Colors */
+    --color-popover: #FFFFFF; /* white */
+    --color-popover-foreground: #2C3E50; /* dark-charcoal */
+    
+    /* Primary Brand Colors */
+    --color-primary: #6BAE4B;
+    --color-primary-foreground: #FFFFFF;
+    
+    /* Secondary Colors */
+    --color-secondary: #2C3E50; /* dark-charcoal */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #34495E; /* slate-700 */
+    --color-accent-foreground: #FFFFFF; /* white */
+    
+    /* Muted Colors */
+    --color-muted: #F8F9FA; /* gray-50 */
+    --color-muted-foreground: #7F8C8D; /* gray-500 */
+    
+    /* Destructive/Error Colors */
+    --color-destructive: #DC3545; /* red-600 */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    --color-error: #DC3545; /* red-600 */
+    --color-error-foreground: #FFFFFF; /* white */
+    
+    /* Success Colors */
+    --color-success: #28A745; /* green-600 */
+    --color-success-foreground: #FFFFFF; /* white */
+    
+    /* Warning Colors */
+    --color-warning: #FFC107; /* yellow-500 */
+    --color-warning-foreground: #2C3E50; /* dark-charcoal */
+    
+    /* Border and Input Colors */
+    --color-border: #E9ECEF; /* gray-200 */
+    --color-input: #E9ECEF; /* gray-200 */
+    --color-ring: #6BAE4B; /* green-600 */
+    
+    /* Additional Semantic Colors */
+    --color-trust: #3498DB; /* blue-500 */
+    --color-trust-foreground: #FFFFFF; /* white */
+    --color-urgent: #E74C3C; /* red-500 */
+    --color-urgent-foreground: #FFFFFF; /* white */
+    --color-action: #27AE60; /* green-700 */
+    --color-action-foreground: #FFFFFF; /* white */
+    
+    /* Typography Colors */
+    --color-text-primary: #2C3E50; /* dark-charcoal */
+    --color-text-secondary: #6C757D; /* gray-600 */
+    
+    /* Spacing and Layout */
+    --radius: 0.375rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
