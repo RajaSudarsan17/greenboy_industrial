@@ -82,6 +82,8 @@ module.exports = {
         body: ['Source Sans Pro', 'sans-serif'],
         cta: ['Inter', 'sans-serif'],
         mono: ['JetBrains Mono', 'monospace'],
+        instrument: ['var(--font-instrument)', "'Instrument Serif'", 'serif'],
+        barlow: ['var(--font-barlow)', "'Barlow'", 'sans-serif'],
       },
       fontWeight: {
         headline: '700',

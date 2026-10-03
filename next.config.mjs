@@ -36,7 +36,7 @@ const nextConfig = {
     return [
       {
         source: '/',
-        destination: '/index.html',
+        destination: '/homepage',
         permanent: false,
       },
     ];
